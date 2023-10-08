@@ -1,17 +1,6 @@
-function reverseWords(sentence) {
-    const words = sentence.split(' ');
+const numbers = [5, 2, 8, 1, 4];
 
-    // Function to reverse a word
-    const reverseWord = (word) => {
-        return word.split('').reverse().join('');
-    };
+// Sort the array in descending order
+numbers.sort((a, b) => b - a);
 
-    const reversedWords = words.map(reverseWord);
-    const reversedSentence = reversedWords.join(' ');
-
-    return reversedSentence;
-}
-
-const inputSentence = 'This is a sunny day';
-const reversedSentence = reverseWords(inputSentence);
-console.log('Reversed sentence:', reversedSentence);
+console.log('Sorted array in descending order:', numbers);
